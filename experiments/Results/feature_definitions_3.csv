@@ -1,0 +1,20 @@
+feature,group,definition,rationale
+log_number_tokens,length,log(1 + number of tokens),"AI rewriting compresses or expands text, so length differs between classes."
+log_number_characters,length,log(1 + number of characters),Same idea in characters; kept to study its correlation with log_number_tokens.
+avg_word_length,lexical,mean number of letters per word,LLMs prefer longer words (e.g. 'utilize' instead of 'use').
+long_words_ratio,lexical,share of words with 8 or more letters,"Same 'fancier vocabulary' tendency, less affected by a few very long words."
+type_token_ratio,lexical,unique words / total words,Vocabulary richness: AI text tends to repeat the same words more.
+stopwords_ratio,lexical,share of words that are NLTK English stopwords,Function-word usage is a classic authorship signal that is hard to fake.
+avg_sentence_length,sentence,mean number of tokens per sentence (sent_tokenize),LLM sentences cluster around a comfortable medium length.
+sentence_length_std,sentence,standard deviation of tokens per sentence,Humans mix very short and very long sentences; AI is more uniform.
+commas_ratio,punctuation,commas / tokens,"AI polishing adds clauses and lists, so more commas."
+punctuation_ratio,punctuation,punctuation tokens (string.punctuation) / tokens,Overall punctuation density differs between human and machine text.
+existence_!,punctuation,"1 if the text contains '!', else 0 (as in LAB6)","Exclamations are a human, emotional trait that AI editing removes."
+existence_?,punctuation,"1 if the text contains '?', else 0",Questions to the reader are typical of conversational human text.
+existence_dash,punctuation,"1 if the text contains an em or en dash, else 0",Em dashes are a well-known LLM habit.
+newlines_ratio,layout,line breaks / tokens,"Original layout (lists, headings) is often merged into prose by AI editing."
+digits_ratio,surface,tokens containing a digit / tokens,"Dates, figures and references are dropped or rounded during rewriting."
+capitalized_ratio,surface,words starting with a capital letter / words,"Proper nouns and names reflect factual, human-sourced text."
+first_person_ratio,style,"first-person pronouns (I, we, my...) / words",Personal voice is a human trait that AI rewriting tends to neutralise.
+contractions_ratio,style,"contraction tokens (n't, 's, 're...) / tokens",Polishing expands contractions; humanisers may add them back.
+ai_words_ratio,style,words from our AI_WORDS list per 100 words,"Words like 'additionally', 'crucial', 'ensure' are over-used by LLMs."
