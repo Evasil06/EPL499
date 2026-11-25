@@ -1,0 +1,28 @@
+{
+  "train": {
+    "file": "data/C/train.csv",
+    "rows": 15750,
+    "counts_by_label_0_1": [
+      5250,
+      10500
+    ],
+    "assignment_counts_by_label_0_1": [
+      5250,
+      10500
+    ],
+    "matches_assignment": true
+  },
+  "validation": {
+    "file": "data/C/test.csv",
+    "rows": 3375,
+    "counts_by_label_0_1": [
+      1125,
+      2250
+    ],
+    "assignment_counts_by_label_0_1": [
+      1125,
+      2250
+    ],
+    "matches_assignment": true
+  }
+}

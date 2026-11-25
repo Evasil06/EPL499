@@ -1,0 +1,14 @@
+{
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "gensim": "4.4.0"
+  },
+  "python_hash_seed": "42",
+  "validation": "The supplied labeled test.csv is used for evaluation and comparison.",
+  "timing": "Wall-clock fit and predict only. Excludes CSV I/O, evaluation and coverage."
+}

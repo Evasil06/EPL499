@@ -1,0 +1,12 @@
+3. Most important files for your teammate's report
+If your teammate wants to start writing the report immediately, prioritize these:
+File	Contains
+comparison.csv	Comparison of all four Word2Vec configurations
+results.csv	Detailed experimental results
+error_analysis.md	Seven analyzed misclassified texts
+original/A/classification_report.txt	Challenge A evaluation
+original/B/classification_report.txt	Challenge B evaluation
+original/C/classification_report.txt	Challenge C evaluation
+original/A/run.json	Original model parameters
+word2vec_lr.py	Implementation details
+member2.py	Experimental methodology
