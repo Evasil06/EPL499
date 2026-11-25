@@ -1,0 +1,6 @@
+# Shared direct dependencies; tested together on Python 3.13.5 in the starter environment.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+gensim==4.4.0
